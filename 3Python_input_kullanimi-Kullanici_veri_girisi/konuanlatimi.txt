@@ -1,0 +1,122 @@
+---
+
+## 📌 `input()` Nedir?
+
+`input()` fonksiyonu, **kullanıcıdan klavye ile veri almak** için kullanılır.
+
+```python
+input()
+```
+
+Program çalışır, **kullanıcıdan bir değer girmesini bekler**.
+
+---
+
+## ✍️ Temel Kullanım
+
+```python
+isim = input("İsminizi girin: ")
+print(isim)
+```
+
+📌 Burada:
+
+* `"İsminizi girin: "` → kullanıcıya gösterilen mesaj
+* Girilen değer → `isim` değişkenine atanır
+
+---
+
+## ⚠️ Önemli Bilgi (ÇOK SORULUR!)
+
+👉 **`input()` her zaman STRING (metin) döndürür.**
+
+```python
+yas = input("Yaşınızı girin: ")
+print(type(yas))  # <class 'str'>
+```
+
+---
+
+## 🔄 Sayıya Çevirme (int / float)
+
+Eğer sayı ile işlem yapacaksak **dönüştürmemiz gerekir**.
+
+### 🔢 `int()` Kullanımı
+
+```python
+yas = int(input("Yaşınızı girin: "))
+print(yas + 1)
+```
+
+### 🔢 `float()` Kullanımı
+
+```python
+not_ort = float(input("Notunuzu girin: "))
+print(not_ort)
+```
+
+---
+
+## ❌ Hatalı Kullanım Örneği
+
+```python
+sayi = input("Bir sayı girin: ")
+print(sayi + 5)  # HATA!
+```
+
+✅ Doğrusu:
+
+```python
+sayi = int(input("Bir sayı girin: "))
+print(sayi + 5)
+```
+
+---
+
+## 🧮 Birden Fazla Input Alma
+
+```python
+a = int(input("1. sayı: "))
+b = int(input("2. sayı: "))
+
+print("Toplam:", a + b)
+```
+
+---
+
+## 🔗 String Birleştirme
+
+```python
+ad = input("Adınız: ")
+soyad = input("Soyadınız: ")
+
+print(ad + " " + soyad)
+```
+
+veya daha temiz:
+
+```python
+print(f"Ad Soyad: {ad} {soyad}")
+```
+
+---
+
+## 🧪 Küçük Örnek
+
+```python
+urun = input("Ürün adı: ")
+fiyat = float(input("Fiyat: "))
+
+print(f"{urun} ürününün fiyatı {fiyat} TL")
+```
+
+---
+
+## 🎯 Özet
+
+* `input()` → kullanıcıdan veri alır
+* Her zaman **string döndürür**
+* Sayı işlemleri için `int()` / `float()` gerekir
+* Kullanıcı ile etkileşimli programlar için vazgeçilmez
+
+---
