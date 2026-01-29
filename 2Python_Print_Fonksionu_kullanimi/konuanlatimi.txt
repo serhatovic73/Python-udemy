@@ -1,0 +1,156 @@
+---
+
+## 📌 `print()` Nedir?
+
+`print()` fonksiyonu, **ekrana çıktı vermek** için kullanılır.
+
+```python
+print("Merhaba Dünya")
+```
+
+---
+
+## ✍️ Temel Kullanım
+
+```python
+print("Python öğreniyorum")
+print(10)
+print(3.14)
+```
+
+Metin, sayı, değişken… hepsini yazdırabiliriz.
+
+---
+
+## 🔠 Değişken Yazdırma
+
+```python
+isim = "Ali"
+yas = 18
+
+print(isim)
+print(yas)
+```
+
+---
+
+## ➕ Birden Fazla Değer Yazdırma
+
+```python
+print("İsim:", isim, "Yaş:", yas)
+```
+
+👉 `print()` virgül ile ayrılan değerler arasına **boşluk koyar**.
+
+---
+
+## 🔗 String Birleştirme
+
+```python
+print("İsim: " + isim)
+```
+
+⚠️ Dikkat: String ile sayı **doğrudan birleştirilemez**.
+
+❌ Hatalı:
+
+```python
+print("Yaş: " + yas)
+```
+
+✅ Doğrusu:
+
+```python
+print("Yaş:", yas)
+# veya
+print("Yaş: " + str(yas))
+```
+
+---
+
+## ✨ f-string (En Kullanışlı Yöntem)
+
+```python
+print(f"İsim: {isim}, Yaş: {yas}")
+```
+
+✔️ Temiz
+✔️ Okunabilir
+✔️ Çok önerilir
+
+---
+
+## 🧮 Hesaplama Sonucu Yazdırma
+
+```python
+a = 10
+b = 5
+
+print(a + b)
+print("Toplam:", a + b)
+print(f"Toplam: {a + b}")
+```
+
+---
+
+## 🔽 Alt Satıra Geçme (`\n`)
+
+```python
+print("Merhaba\nDünya")
+```
+
+---
+
+## 🔄 `end` Parametresi
+
+Varsayılan olarak `print()` **alt satıra geçer**.
+
+```python
+print("Merhaba", end=" ")
+print("Dünya")
+```
+
+Çıktı:
+
+```
+Merhaba Dünya
+```
+
+---
+
+## 🔹 `sep` Parametresi
+
+```python
+print("2026", "01", "24", sep="-")
+```
+
+Çıktı:
+
+```
+2026-01-24
+```
+
+---
+
+## 🧪 Küçük Örnek
+
+```python
+ad = "Zeynep"
+puan = 85
+
+print("Öğrenci Bilgileri")
+print("-----------------")
+print(f"Ad: {ad}")
+print(f"Puan: {puan}")
+```
+
+---
+
+## 🎯 Özet
+
+* `print()` → ekrana yazdırır
+* Birden fazla değer yazdırabilir
+* `sep`, `end` ile çıktı kontrol edilir
+* `f-string` en pratik yöntem
+
+---

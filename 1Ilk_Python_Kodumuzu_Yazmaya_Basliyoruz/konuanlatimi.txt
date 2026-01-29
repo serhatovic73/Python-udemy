@@ -1,0 +1,43 @@
+
+---
+
+## 🚀 1. Adım: İlk Python Kodu
+
+Python’da geleneksel ilk program şudur:
+
+```python
+print("Merhaba Dünya")
+```
+
+🎉 Tebrikler! Bu senin **ilk Python kodun**.
+
+---
+
+## 🧠 Bu Kod Ne Yapıyor?
+
+* `print()` → ekrana yazdırır
+* `"Merhaba Dünya"` → yazdırılacak metin
+
+Program çalışınca ekranda şunu görürsün:
+
+```
+Merhaba Dünya
+```
+
+---
+
+## ✍️ Biraz Daha Geliştirelim
+
+```python
+print("Python öğreniyorum")
+print("Bu benim ilk kodum")
+```
+
+Çıktı:
+
+```
+Python öğreniyorum
+Bu benim ilk kodum
+```
+
+---
