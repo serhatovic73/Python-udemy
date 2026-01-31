@@ -1,0 +1,55 @@
+
+---
+
+## 📌 Formatted String (f-string) nedir?
+
+String içine **değişken ve ifade** yazmayı sağlar.
+
+---
+
+## 🔴 Eski yöntem
+
+```python
+isim = "Serhat"
+yas = 23
+print("Adım " + isim + ", yaşım " + str(yas))
+```
+
+---
+
+## 🟢 f-string (ÖNERİLEN)
+
+```python
+isim = "Serhat"
+yas = 23
+print(f"Adım {isim}, yaşım {yas}")
+```
+
+---
+
+## 🧠 Kural
+
+* String’in başına **`f`**
+* `{}` içine **Python kodu**
+
+```python
+sayi = 5
+print(f"Karesi: {sayi**2}")
+```
+
+---
+
+## 🔢 Formatlama
+
+```python
+pi = 3.14159
+print(f"{pi:.2f}")  # 3.14
+```
+
+---
+
+## 🎯 Ne zaman?
+
+👉 `print()` yaparken **her zaman**
+
+---

@@ -1,0 +1,116 @@
+
+---
+
+## 1️⃣ Değişken İsimlendirme Kuralları
+
+* Harf, rakam ve `_` (alt çizgi) kullanılabilir
+* **Rakamla başlayamaz**
+* Türkçe karakter kullanma **önerilmez**
+* Büyük/küçük harf **farklıdır**
+
+✅ Doğru:
+
+```python
+ogrenci_sayisi = 30
+toplamNot = 85
+```
+
+❌ Yanlış:
+
+```python
+3sayi = 10
+öğrenci = "Ali"
+toplam-not = 50
+```
+
+---
+
+## 2️⃣ Anlamlı İsimler Kullanın
+
+Değişken adı ne tuttuğunu anlatmalı.
+
+❌ Kötü:
+
+```python
+x = 120
+```
+
+✅ İyi:
+
+```python
+urun_fiyati = 120
+```
+
+---
+
+## 3️⃣ Python Anahtar Kelimelerini Kullanmayın
+
+Python’un özel kelimeleri değişken adı olamaz.
+
+❌ Yanlış:
+
+```python
+if = 10
+for = 5
+```
+
+Bazı anahtar kelimeler:
+`if, else, for, while, class, def, return, True, False`
+
+---
+
+## 4️⃣ Dinamik Tip Yapısını Unutmayın
+
+Python’da değişken tipi sonradan değişebilir ama **dikkatli olun**.
+
+```python
+x = 10      # int
+x = "Ali"   # str
+```
+
+Bu esneklik bazen hataya yol açabilir ⚠️
+
+---
+
+## 5️⃣ Sabitler Büyük Harfle Yazılır (Gelenek)
+
+Python’da gerçek sabit yoktur ama **büyük harf** ile yazılır.
+
+```python
+PI = 3.14
+MAX_KULLANICI = 100
+```
+
+---
+
+## 6️⃣ Aynı Değişkeni Farklı Amaçla Kullanmayın
+
+Kod okunabilirliği düşer.
+
+❌ Kötü:
+
+```python
+x = 5
+x = "Merhaba"
+```
+
+---
+
+## 7️⃣ Boşluklara ve Okunabilirliğe Özen Gösterin
+
+```python
+toplam_not = vize + final
+ortalama = toplam_not / 2
+```
+
+---
+
+## 8️⃣ Global Değişkenleri Az Kullanın
+
+Fonksiyon içinde kullanılan değişkenler **yerel** olmalı.
+
+```python
+def hesapla():
+    toplam = 10
+    return toplam
+```

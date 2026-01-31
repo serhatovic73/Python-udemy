@@ -1,0 +1,138 @@
+---
+
+## 📌 Değişken Nedir?
+
+Değişken, **bir değeri saklamak için kullandığımız isimdir**.
+Bilgisayara şunu demiş oluruz:
+
+> “Bu değeri al, şu isimle hatırla.”
+
+---
+
+## 🧠 Python’da Değişken Tanımlama
+
+Python’da değişken tanımlamak çok kolaydır, **tür belirtmeye gerek yoktur**.
+
+```python
+x = 10
+isim = "Ahmet"
+oran = 3.14
+```
+
+* `=` → atama operatörü
+* Sağdaki değer, soldaki değişkene atanır
+
+---
+
+## 🔠 Değişken Türleri (Otomatik)
+
+Python, değişkenin türünü **kendisi belirler**.
+
+### 1️⃣ Sayılar
+
+```python
+sayi = 5        # int
+ondalik = 2.5   # float
+```
+
+### 2️⃣ Metin (String)
+
+```python
+metin = "Merhaba"
+isim = 'Ali'
+```
+
+### 3️⃣ Boolean (Doğru / Yanlış)
+
+```python
+dogru_mu = True
+yanlis_mi = False
+```
+
+---
+
+## 🔎 Değişkenin Türünü Öğrenme
+
+```python
+x = 10
+print(type(x))
+```
+
+---
+
+## ✏️ Değişken Değeri Değiştirme
+
+```python
+x = 10
+x = 20
+print(x)  # 20
+```
+
+👉 Python’da **aynı değişkene farklı türde değer atanabilir**:
+
+```python
+x = 5
+x = "merhaba"
+```
+
+---
+
+## 📐 Değişken İsimlendirme Kuralları
+
+✅ Doğru:
+
+```python
+sayi1 = 10
+toplam_fiyat = 100
+_isim = "Ayşe"
+```
+
+❌ Yanlış:
+
+```python
+1sayi = 10     # sayı ile başlayamaz
+toplam-fiyat = 10  # - kullanılamaz
+class = 5      # özel anahtar kelime
+```
+
+---
+
+## 🧮 Değişkenlerle İşlemler
+
+```python
+a = 10
+b = 3
+
+print(a + b)  # toplama
+print(a - b)  # çıkarma
+print(a * b)  # çarpma
+print(a / b)  # bölme
+```
+
+---
+
+## 🖨️ Ekrana Yazdırma
+
+```python
+isim = "Zeynep"
+yas = 20
+
+print(isim, yas)
+```
+
+veya:
+
+```python
+print(f"İsim: {isim}, Yaş: {yas}")
+```
+
+---
+
+## 🎯 Özet
+
+* Değişken = veri saklama alanı
+* Python’da tür belirtmeye gerek yok
+* Değişkenlerin değeri ve türü değişebilir
+* İsimlendirme kurallarına dikkat edilmeli
+
+---

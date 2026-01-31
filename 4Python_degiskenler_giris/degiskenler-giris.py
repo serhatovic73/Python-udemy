@@ -18,3 +18,5 @@ print("Kimlik Verileriniz :"
         "\nDogum Tarihi : " + str(dogumTarihi) +
         "\nAnne Adi : " + anneAdi +
         "\nBaba Adi : "  + babaAdi)
+
+
