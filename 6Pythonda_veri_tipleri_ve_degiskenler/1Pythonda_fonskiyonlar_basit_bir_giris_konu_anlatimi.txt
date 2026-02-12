@@ -1,0 +1,121 @@
+PYTHON HAZIR (BUILT-IN) FONKSİYONLAR
+
+1) HAZIR FONKSİYON NEDİR?
+
+Python’ın kendi içinde bulunan,
+bizim yazmadığımız ama direkt kullandığımız fonksiyonlardır.
+
+Özellikleri:
+- Zaten tanımlıdır
+- Direkt çağrılır
+- Parantez ile kullanılır
+
+--------------------------------------------------
+
+2) len() — UZUNLUK BULUR
+
+Bir verinin kaç elemanı olduğunu söyler.
+
+Örnek:
+
+len("merhaba")     → 7
+len([1, 2, 3, 4])  → 4
+
+Şunlarda çalışır:
+- String
+- List
+- Tuple
+- Dictionary
+
+--------------------------------------------------
+
+3) type() — TÜRÜNÜ SÖYLER
+
+Örnek:
+
+type(5)        → int
+type("selam")  → str
+
+--------------------------------------------------
+
+4) int(), float(), str() — DÖNÜŞTÜRME
+
+Tür dönüşümü için kullanılır.
+
+Örnek:
+
+int("5")     → 5
+float(3)     → 3.0
+str(10)      → "10"
+
+--------------------------------------------------
+
+5) sum() — TOPLAM ALIR
+
+Listedeki sayıları toplar.
+
+Örnek:
+
+sum([1, 2, 3])  → 6
+
+--------------------------------------------------
+
+6) max() / min() — EN BÜYÜK / EN KÜÇÜK
+
+En büyük ve en küçük değeri bulur.
+
+Örnek:
+
+max(3, 7, 1)     → 7
+min([5, 2, 9])   → 2
+
+--------------------------------------------------
+
+7) abs() — MUTLAK DEĞER
+
+Sayının işaretsiz halini verir.
+
+Örnek:
+
+abs(-10)   → 10
+
+--------------------------------------------------
+
+8) input() — KULLANICIDAN VERİ ALIR
+
+Kullanıcıdan veri alır.
+
+Örnek:
+
+isim = input("Adın ne? ")
+
+Her zaman STRING döndürür.
+
+--------------------------------------------------
+
+9) GENEL KULLANIM ŞEKLİ
+
+Fonksiyonlar şu şekilde kullanılır:
+
+fonksiyon_adi(parametre)
+
+Örnekler:
+
+len("python")
+max(1, 2, 3)
+int("7")
+
+--------------------------------------------------
+
+10) SINAVDA EN ÇOK ÇIKANLAR
+
+len()
+type()
+int(), float(), str()
+max(), min()
+sum()
+abs()
+
+--------------------------------------------------
+
+BİTTİ

@@ -1,55 +1,71 @@
+PYTHON FORMATTED STRING (F-STRING)
 
----
+1) F-STRING NEDİR?
 
-## 📌 Formatted String (f-string) nedir?
+String içine değişken ve Python ifadeleri
+yazmayı sağlayan özel yazım şeklidir.
 
-String içine **değişken ve ifade** yazmayı sağlar.
+--------------------------------------------------
 
----
+2) ESKİ YÖNTEM (ÖNERİLMEZ)
 
-## 🔴 Eski yöntem
+Örnek:
 
-```python
 isim = "Serhat"
 yas = 23
+
 print("Adım " + isim + ", yaşım " + str(yas))
-```
 
----
+Bu yöntem uzundur ve karışıktır.
 
-## 🟢 f-string (ÖNERİLEN)
+--------------------------------------------------
 
-```python
+3) F-STRING (ÖNERİLEN YÖNTEM)
+
+Örnek:
+
 isim = "Serhat"
 yas = 23
+
 print(f"Adım {isim}, yaşım {yas}")
-```
 
----
+Daha kısa ve daha okunaklıdır.
 
-## 🧠 Kural
+--------------------------------------------------
 
-* String’in başına **`f`**
-* `{}` içine **Python kodu**
+4) KULLANIM KURALI
 
-```python
+- String’in başına f yazılır
+- {} içine Python kodu yazılır
+
+Örnek:
+
 sayi = 5
 print(f"Karesi: {sayi**2}")
-```
 
----
+--------------------------------------------------
 
-## 🔢 Formatlama
+5) FORMATLAMA (ONDALIK BASAMAK)
 
-```python
+Ondalık sayıların kaç basamak gösterileceği ayarlanabilir.
+
+Örnek:
+
 pi = 3.14159
-print(f"{pi:.2f}")  # 3.14
-```
+print(f"{pi:.2f}")   → 3.14
 
----
+Anlamı:
+.2f → Virgülden sonra 2 basamak göster
 
-## 🎯 Ne zaman?
+--------------------------------------------------
 
-👉 `print()` yaparken **her zaman**
+6) NE ZAMAN KULLANILIR?
 
----
+print() kullanırken
+her zaman f-string tercih edilir.
+
+Kodun okunabilirliğini artırır.
+
+--------------------------------------------------
+
+BİTTİ

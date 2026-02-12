@@ -1,0 +1,102 @@
+PYTHON'DA DİNAMİK TİP BELİRLEME (DYNAMIC TYPING)
+
+1) DİNAMİK OLARAK BELİRLENMESİ NE DEMEK?
+
+Python’da:
+- Değişkenin türünü önceden yazmazsın
+- Python, verilen değere göre türü kendi belirler
+
+Yani:
+"Bu değişken int mi, str mi?"
+Bunu Python senin yerine belirler.
+
+--------------------------------------------------
+
+2) C / JAVA GİBİ DİLLERDEN FARKI
+
+C dilinde:
+
+int a = 5;
+
+Python’da:
+
+a = 5
+
+Python otomatik olarak:
+a → int
+
+--------------------------------------------------
+
+3) AYNI DEĞİŞKEN, FARKLI TÜRLER
+
+Örnek:
+
+x = 10
+print(type(x))   # int
+
+x = "merhaba"
+print(type(x))   # str
+
+x = 3.5
+print(type(x))   # float
+
+Aynı değişken adı kullanılır,
+ama türü değişebilir.
+
+Bu özelliğe:
+"Dinamik tipli dil" denir.
+
+--------------------------------------------------
+
+4) TÜR NE ZAMAN DEĞİŞİR?
+
+Yeni değer atandığında tür değişir.
+
+Örnek:
+
+a = 7        # int
+a = a + 2    # hala int
+a = "7"      # artık str
+
+--------------------------------------------------
+
+5) DİKKAT EDİLECEK NOKTA
+
+Python türü otomatik belirler
+ama hatalı işlemlere izin vermez.
+
+Örnek:
+
+a = "5"
+b = 3
+
+a + b   # HATA
+
+Doğru kullanım:
+
+int(a) + b   # DOĞRU
+
+--------------------------------------------------
+
+6) input() VE DİNAMİK TİPLEME
+
+input() her zaman STRING döndürür.
+
+yas = input("Yaş: ")
+
+yas → str
+
+Sayı olarak kullanmak için:
+
+yas = int(input("Yaş: "))
+
+--------------------------------------------------
+
+7) ÖZET (SINAVLIK CÜMLE)
+
+Python dinamik tipli bir dildir.
+Değişkenlerin veri tipi,
+atanan değere göre
+çalışma anında belirlenir.
+
+--------------------------------------------------

@@ -1,0 +1,139 @@
+PYTHON TEMEL VERİ TİPLERİ
+
+1) int — TAM SAYI
+
+Negatif, pozitif ve sıfır olabilir.
+Ondalık kısım yoktur.
+
+Örnek:
+
+a = 5
+b = -10
+
+type(a) → int
+
+--------------------------------------------------
+
+2) float — ONDALIK SAYI
+
+Virgül yerine nokta kullanılır.
+
+Örnek:
+
+x = 3.14
+y = 2.0
+
+type(x) → float
+
+--------------------------------------------------
+
+3) str — METİN (STRING)
+
+Tırnak içinde yazılır.
+
+Örnek:
+
+isim = "Ali"
+kelime = 'Python'
+
+Sayı gibi görünse bile tırnak varsa stringtir:
+
+"5" → str
+
+--------------------------------------------------
+
+4) bool — MANTIKSAL
+
+Sadece iki değer alır:
+
+True
+False
+
+Örnek:
+
+5 > 3    → True
+10 < 2   → False
+
+--------------------------------------------------
+
+5) list — LİSTE
+
+Birden fazla veri tutar.
+Değiştirilebilir (mutable).
+
+Örnek:
+
+liste = [1, 2, 3, "elma", True]
+
+liste[0] = 10
+
+--------------------------------------------------
+
+6) tuple — DEMET
+
+Listeye benzer.
+Değiştirilemez (immutable).
+
+Örnek:
+
+demet = (1, 2, 3)
+
+demet[0] = 5   → HATA
+
+--------------------------------------------------
+
+7) dict — SÖZLÜK
+
+Anahtar : Değer mantığıyla çalışır.
+
+Örnek:
+
+ogrenci = {
+    "ad": "Ayşe",
+    "yas": 20
+}
+
+ogrenci["yas"] → 20
+
+--------------------------------------------------
+
+8) set — KÜME
+
+- Tekrar eden eleman olmaz
+- Sırasızdır
+
+Örnek:
+
+kume = {1, 2, 2, 3}
+
+Sonuç:
+{1, 2, 3}
+
+--------------------------------------------------
+
+9) YENİ BAŞLAYANLAR İÇİN EN TEMELLER
+
+int
+float
+str
+bool
+list
+
+Bu tipler olmazsa olmazdır.
+
+--------------------------------------------------
+
+10) HIZLI ÖZET TABLO
+
+int    → Tam sayı
+float  → Ondalıklı sayı
+str    → Metin
+bool   → True / False
+list   → Değiştirilebilir dizi
+tuple  → Değiştirilemez dizi
+dict   → Anahtar - değer
+set    → Tekrarsız küme
+
+--------------------------------------------------
+
+BİTTİ

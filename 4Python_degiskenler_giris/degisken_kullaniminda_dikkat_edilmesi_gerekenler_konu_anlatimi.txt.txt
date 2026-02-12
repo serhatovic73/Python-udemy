@@ -1,116 +1,107 @@
+DEĞİŞKEN İSİMLENDİRME KURALLARI VE ÖNERİLER
 
----
+1) DEĞİŞKEN İSİMLENDİRME KURALLARI
 
-## 1️⃣ Değişken İsimlendirme Kuralları
+- Harf, rakam ve _ (alt çizgi) kullanılabilir
+- Rakamla başlayamaz
+- Türkçe karakter kullanımı önerilmez
+- Büyük/küçük harf farklıdır
 
-* Harf, rakam ve `_` (alt çizgi) kullanılabilir
-* **Rakamla başlayamaz**
-* Türkçe karakter kullanma **önerilmez**
-* Büyük/küçük harf **farklıdır**
+Doğru Örnek:
 
-✅ Doğru:
-
-```python
 ogrenci_sayisi = 30
 toplamNot = 85
-```
 
-❌ Yanlış:
+Yanlış Örnek:
 
-```python
 3sayi = 10
 öğrenci = "Ali"
 toplam-not = 50
-```
 
----
+--------------------------------------------------
 
-## 2️⃣ Anlamlı İsimler Kullanın
+2) ANLAMLI İSİMLER KULLANIN
 
 Değişken adı ne tuttuğunu anlatmalı.
 
-❌ Kötü:
+Kötü Örnek:
 
-```python
 x = 120
-```
 
-✅ İyi:
+İyi Örnek:
 
-```python
 urun_fiyati = 120
-```
 
----
+--------------------------------------------------
 
-## 3️⃣ Python Anahtar Kelimelerini Kullanmayın
+3) PYTHON ANAHTAR KELİMELERİNİ KULLANMAYIN
 
 Python’un özel kelimeleri değişken adı olamaz.
 
-❌ Yanlış:
+Yanlış Örnek:
 
-```python
 if = 10
 for = 5
-```
 
 Bazı anahtar kelimeler:
-`if, else, for, while, class, def, return, True, False`
+if, else, for, while, class, def, return, True, False
 
----
+--------------------------------------------------
 
-## 4️⃣ Dinamik Tip Yapısını Unutmayın
+4) DİNAMİK TİP YAPISINI UNUTMAYIN
 
-Python’da değişken tipi sonradan değişebilir ama **dikkatli olun**.
+Python’da değişken tipi sonradan değişebilir, dikkatli olun.
 
-```python
+Örnek:
+
 x = 10      # int
 x = "Ali"   # str
-```
 
 Bu esneklik bazen hataya yol açabilir ⚠️
 
----
+--------------------------------------------------
 
-## 5️⃣ Sabitler Büyük Harfle Yazılır (Gelenek)
+5) SABİTLER BÜYÜK HARFLE YAZILIR (GELENEK)
 
-Python’da gerçek sabit yoktur ama **büyük harf** ile yazılır.
+Python’da gerçek sabit yoktur ama büyük harf ile yazılır.
 
-```python
+Örnek:
+
 PI = 3.14
 MAX_KULLANICI = 100
-```
 
----
+--------------------------------------------------
 
-## 6️⃣ Aynı Değişkeni Farklı Amaçla Kullanmayın
+6) AYNI DEĞİŞKENİ FARKLI AMAÇLA KULLANMAYIN
 
 Kod okunabilirliği düşer.
 
-❌ Kötü:
+Kötü Örnek:
 
-```python
 x = 5
 x = "Merhaba"
-```
 
----
+--------------------------------------------------
 
-## 7️⃣ Boşluklara ve Okunabilirliğe Özen Gösterin
+7) BOŞLUKLARA VE OKUNABİLİRLİĞE ÖZEN GÖSTERİN
 
-```python
+Örnek:
+
 toplam_not = vize + final
 ortalama = toplam_not / 2
-```
 
----
+--------------------------------------------------
 
-## 8️⃣ Global Değişkenleri Az Kullanın
+8) GLOBAL DEĞİŞKENLERİ AZ KULLANIN
 
-Fonksiyon içinde kullanılan değişkenler **yerel** olmalı.
+Fonksiyon içinde kullanılan değişkenler yerel olmalı.
 
-```python
+Örnek:
+
 def hesapla():
     toplam = 10
     return toplam
-```
+
+--------------------------------------------------
+
+BİTTİ

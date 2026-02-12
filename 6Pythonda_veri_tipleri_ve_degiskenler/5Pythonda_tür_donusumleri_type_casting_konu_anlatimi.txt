@@ -1,0 +1,170 @@
+PYTHON TYPE CASTING (TÜR DÖNÜŞÜMLERİ)
+
+1) TYPE CASTING NEDİR?
+Bir veri tipini başka bir veri tipine dönüştürme işlemidir.
+Örnek: string → int, int → float, vb.
+
+--------------------------------------------------
+
+2) OTOMATİK DÖNÜŞÜM (IMPLICIT CASTING)
+Python bazı durumlarda dönüşümü kendisi yapar.
+
+Örnek:
+
+a = 5
+b = 2.5
+c = a + b
+
+print(c)        # 7.5
+print(type(c))  # float
+
+--------------------------------------------------
+
+3) MANUEL DÖNÜŞÜM (EXPLICIT CASTING)
+Programcı kendisi dönüşüm yapar.
+
+Kullanılan fonksiyonlar:
+
+int()    → Tam sayıya çevirir
+float()  → Ondalıklı sayıya çevirir
+str()    → Stringe çevirir
+bool()   → Boolean’a çevirir
+list()   → Listeye çevirir
+tuple()  → Tuple’a çevirir
+set()    → Set’e çevirir
+
+--------------------------------------------------
+
+4) int() KULLANIMI
+
+String → int
+
+sayi = "25"
+yeni = int(sayi)
+
+print(yeni)
+
+Hatalı kullanım:
+
+int("25a")   # ValueError
+
+Float → int
+
+x = 4.9
+y = int(x)
+
+print(y)   # 4 (yuvarlamaz, keser)
+
+--------------------------------------------------
+
+5) float() KULLANIMI
+
+int → float
+
+a = 10
+b = float(a)
+
+print(b)   # 10.0
+
+String → float
+
+x = "3.14"
+y = float(x)
+
+print(y)
+
+--------------------------------------------------
+
+6) str() KULLANIMI
+
+Sayı → String
+
+yas = 20
+metin = str(yas)
+
+print("Yaşım: " + metin)
+
+Hatalı:
+
+print("Yaşım: " + yas)   # TypeError
+
+--------------------------------------------------
+
+7) bool() KULLANIMI
+
+False olanlar:
+
+bool(0)
+bool(0.0)
+bool("")
+bool([])
+bool(None)
+
+True olanlar:
+
+bool(1)
+bool(5)
+bool("abc")
+bool([1,2,3])
+
+Kural:
+Boş → False
+Dolu → True
+
+--------------------------------------------------
+
+8) KOLEKSİYON DÖNÜŞÜMLERİ
+
+Tuple → List, Set
+
+t = (1, 2, 3)
+
+liste = list(t)
+kume = set(t)
+
+print(liste)
+print(kume)
+
+String → List
+
+x = "python"
+print(list(x))
+
+--------------------------------------------------
+
+9) input() VE TYPE CASTING
+
+input() her zaman STRING döndürür.
+
+yas = input("Yaş gir: ")
+print(type(yas))   # str
+
+Sayı yapmak için:
+
+yas = int(input("Yaş gir: "))
+print(yas + 1)
+
+--------------------------------------------------
+
+10) HATA YÖNETİMİ (try-except)
+
+try:
+    sayi = int(input("Sayı gir: "))
+    print(sayi)
+except ValueError:
+    print("Geçersiz sayı!")
+
+--------------------------------------------------
+
+11) ÖZET TABLO
+
+String → int     : int("25")
+Float → int      : int(4.8)
+Int → float      : float(5)
+Sayı → string    : str(10)
+String → float   : float("3.14")
+Her şey → bool   : bool(x)
+
+--------------------------------------------------
+
+BİTTİ

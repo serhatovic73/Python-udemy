@@ -1,140 +1,113 @@
----
+PYTHON'DA PRINT() FONKSİYONU
 
-## 📌 `print()` Nedir?
+1) PRINT() NEDİR?
 
-`print()` fonksiyonu, **ekrana çıktı vermek** için kullanılır.
+print() fonksiyonu, ekrana çıktı vermek için kullanılır.
 
-```python
+Örnek:
+
 print("Merhaba Dünya")
-```
 
----
+--------------------------------------------------
 
-## ✍️ Temel Kullanım
+2) TEMEL KULLANIM
 
-```python
 print("Python öğreniyorum")
 print(10)
 print(3.14)
-```
 
 Metin, sayı, değişken… hepsini yazdırabiliriz.
 
----
+--------------------------------------------------
 
-## 🔠 Değişken Yazdırma
+3) DEĞİŞKEN YAZDIRMA
 
-```python
 isim = "Ali"
 yas = 18
 
 print(isim)
 print(yas)
-```
 
----
+--------------------------------------------------
 
-## ➕ Birden Fazla Değer Yazdırma
+4) BİRDEN FAZLA DEĞER YAZDIRMA
 
-```python
 print("İsim:", isim, "Yaş:", yas)
-```
 
-👉 `print()` virgül ile ayrılan değerler arasına **boşluk koyar**.
+- Virgül ile ayrılan değerler arasında boşluk ekler.
 
----
+--------------------------------------------------
 
-## 🔗 String Birleştirme
+5) STRING BİRLEŞTİRME
 
-```python
 print("İsim: " + isim)
-```
 
-⚠️ Dikkat: String ile sayı **doğrudan birleştirilemez**.
+Dikkat: String ile sayı doğrudan birleştirilemez.
 
-❌ Hatalı:
+Hatalı:
 
-```python
 print("Yaş: " + yas)
-```
 
-✅ Doğrusu:
+Doğru:
 
-```python
 print("Yaş:", yas)
 # veya
 print("Yaş: " + str(yas))
-```
 
----
+--------------------------------------------------
 
-## ✨ f-string (En Kullanışlı Yöntem)
+6) F-STRING (EN KULLANIŞLI)
 
-```python
 print(f"İsim: {isim}, Yaş: {yas}")
-```
 
-✔️ Temiz
-✔️ Okunabilir
-✔️ Çok önerilir
+- Temiz
+- Okunabilir
+- Çok önerilir
 
----
+--------------------------------------------------
 
-## 🧮 Hesaplama Sonucu Yazdırma
+7) HESAPLAMA SONUCU YAZDIRMA
 
-```python
 a = 10
 b = 5
 
 print(a + b)
 print("Toplam:", a + b)
 print(f"Toplam: {a + b}")
-```
 
----
+--------------------------------------------------
 
-## 🔽 Alt Satıra Geçme (`\n`)
+8) ALT SATIRA GEÇME (\n)
 
-```python
 print("Merhaba\nDünya")
-```
 
----
+--------------------------------------------------
 
-## 🔄 `end` Parametresi
+9) END PARAMETRESİ
 
-Varsayılan olarak `print()` **alt satıra geçer**.
+Varsayılan olarak print() alt satıra geçer.
 
-```python
 print("Merhaba", end=" ")
 print("Dünya")
-```
 
 Çıktı:
 
-```
 Merhaba Dünya
-```
 
----
+--------------------------------------------------
 
-## 🔹 `sep` Parametresi
+10) SEP PARAMETRESİ
 
-```python
 print("2026", "01", "24", sep="-")
-```
 
 Çıktı:
 
-```
 2026-01-24
-```
 
----
+--------------------------------------------------
 
-## 🧪 Küçük Örnek
+11) KÜÇÜK ÖRNEK
 
-```python
 ad = "Zeynep"
 puan = 85
 
@@ -142,15 +115,14 @@ print("Öğrenci Bilgileri")
 print("-----------------")
 print(f"Ad: {ad}")
 print(f"Puan: {puan}")
-```
 
----
+--------------------------------------------------
 
-## 🎯 Özet
+12) ÖZET
 
-* `print()` → ekrana yazdırır
-* Birden fazla değer yazdırabilir
-* `sep`, `end` ile çıktı kontrol edilir
-* `f-string` en pratik yöntem
+- print() → ekrana yazdırır
+- Birden fazla değer yazdırabilir
+- sep, end ile çıktı kontrol edilir
+- f-string en pratik yöntem
 
----
+--------------------------------------------------

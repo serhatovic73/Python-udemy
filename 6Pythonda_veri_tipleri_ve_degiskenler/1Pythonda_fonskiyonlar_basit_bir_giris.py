@@ -5,3 +5,4 @@ print("Merhaba")
 
 #burada ise once len hesaplanir sonra print calisir
 print("Karakter Sayisi : " , len("Serhat"))
+
