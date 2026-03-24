@@ -1,0 +1,128 @@
+PYTHON'DA BILESIK ATAMA OPERATORLERI
+
+Bilesik Atama Operatoru Nedir?
+
+Bilesik atama operatorleri, bir degiskene hem islem yapip hem de sonucu tekrar ayni degiskene atamak icin kullanilir.
+
+Ornek:
+x = x + 5
+
+Bunun kisa yazimi:
+x += 5
+
+Yani hem toplama yapar hem de sonucu x degiskenine atar.
+
+Temel Bilesik Atama Operatorleri
+
+Toplama (+=)
+
+x = 5
+x += 3 # x = x + 3
+print(x)
+
+Cikti:
+8
+
+Cikarma (-=)
+
+x = 10
+x -= 4 # x = x - 4
+print(x)
+
+Cikti:
+6
+
+Carpma (*=)
+
+x = 6
+x *= 2 # x = x * 2
+print(x)
+
+Cikti:
+12
+
+Bolme (/=)
+
+x = 10
+x /= 2 # x = x / 2
+print(x)
+
+Cikti:
+5.0
+
+Not: / islemi sonucu float (ondalikli sayi) verir.
+
+Tam Bolme (//=)
+
+x = 10
+x //= 3 # x = x // 3
+print(x)
+
+Cikti:
+3
+
+Ondalik kisim atilir.
+
+Mod (Kalan) (%=)
+
+x = 10
+x %= 3 # x = x % 3
+print(x)
+
+Cikti:
+1
+
+Us Alma (**=)
+
+x = 2
+x **= 3 # x = x ** 3
+print(x)
+
+Cikti:
+8
+
+Bit Duzeyinde Bilesik Operatorler
+
+&= AND
+|= OR
+^= XOR
+<<= Sola kaydirma
+
+= Saga kaydirma
+
+Ornek:
+
+x = 5 # Binary: 101
+x &= 3 # Binary: 011
+print(x)
+
+Cikti:
+1
+
+Neden Kullanilir?
+
+Kod daha kisa olur.
+
+Tekrar azalir.
+
+Daha okunabilir bir yapi saglar.
+
+Ornek:
+
+puan = 0
+puan += 10
+puan += 5
+puan -= 3
+
+print(puan)
+
+Ozet Tablo
+
+Normal Yazim Bilesik Yazim
+x = x + 5 x += 5
+x = x - 5 x -= 5
+x = x * 5 x *= 5
+x = x / 5 x /= 5
+x = x // 5 x //= 5
+x = x % 5 x %= 5
+x = x ** 5 x **= 5

@@ -1,0 +1,98 @@
+
+
+## PYTHON'DA 4 DEGISKENE INPUT ILE ATAMA
+
+1. input() Fonksiyonu Nedir?
+
+input() fonksiyonu kullanıcıdan veri almak için kullanılır.
+Girilen veri her zaman STRING (metin) olarak alınır.
+
+Genel kullanım:
+
+degisken = input("Mesaj: ")
+
+---
+
+2. 4 Degiskene Ayri Ayri Input Ile Atama
+
+---
+
+ad = input("Adinizi giriniz: ")
+soyad = input("Soyadinizi giriniz: ")
+yas = input("Yasinizi giriniz: ")
+sehir = input("Sehrinizi giriniz: ")
+
+print(ad, soyad, yas, sehir)
+
+Not: yas su an string tipindedir.
+
+---
+
+3. Sayisal Degerleri Donusturme
+
+---
+
+Eger sayi ile islem yapacaksak donusum yapmamiz gerekir.
+
+yas = int(input("Yasinizi giriniz: "))
+boy = float(input("Boyunuzu giriniz (orn: 1.75): "))
+
+print(yas + 5)
+print(boy * 2)
+
+int()  -> tam sayiya cevirir
+float() -> ondalikli sayiya cevirir
+
+---
+
+4. Tek Satirda 4 Degiskene Atama
+
+---
+
+Kullanici verileri aralarina bosluk koyarak girerse:
+
+ad, soyad, yas, sehir = input("Bilgileri bosluklu giriniz: ").split()
+
+print(ad)
+print(soyad)
+print(yas)
+print(sehir)
+
+Ornek giris:
+Ahmet Yilmaz 18 Ankara
+
+Not:
+.split() girilen metni bosluklara gore parcalar.
+
+---
+
+5. Sayisal Degerlerle Tek Satir Atama
+
+---
+
+a, b, c, d = map(int, input("4 sayi giriniz: ").split())
+
+print(a + b + c + d)
+
+map(int, ...) her parcayi tam sayiya cevirir.
+
+Ornek giris:
+5 10 15 20
+
+Cikti:
+50
+
+---
+
+6. Ozet
+
+---
+
+* input() veriyi string olarak alir.
+* int() ve float() ile donusum yapilir.
+* .split() metni parcalar.
+* map() ile toplu donusum yapilabilir.
+
+Bu konu genellikle baslangic seviyesinde cok onemlidir ve sinavlarda sikca sorulur.
+
+---

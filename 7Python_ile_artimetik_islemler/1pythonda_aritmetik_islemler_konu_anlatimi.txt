@@ -1,0 +1,95 @@
+PYTHON'DA ARİTMETİK İŞLEMLER
+
+Python’da aritmetik işlemler matematikteki temel işlemlerle aynıdır. Sayılar üzerinde toplama, çıkarma, çarpma ve bölme gibi işlemler yapılır.
+
+Toplama (+)
+
+İki sayıyı toplamak için + operatörü kullanılır.
+
+Örnek:
+a = 5
+b = 3
+print(a + b)
+
+Çıktı:
+8
+
+Çıkarma (-)
+
+Bir sayıdan başka bir sayıyı çıkarmak için - operatörü kullanılır.
+
+Örnek:
+a = 10
+b = 4
+print(a - b)
+
+Çıktı:
+6
+
+Çarpma (*)
+
+İki sayıyı çarpmak için * operatörü kullanılır.
+
+Örnek:
+print(6 * 7)
+
+Çıktı:
+42
+
+Bölme (/)
+
+Bir sayıyı başka bir sayıya bölmek için / operatörü kullanılır.
+Bu işlem sonucu ondalıklı (float) sayı verir.
+
+Örnek:
+print(10 / 2)
+
+Çıktı:
+5.0
+
+Tam Bölme (//)
+
+Bölme işleminin sadece tam kısmını verir. Ondalık kısmı atar.
+
+Örnek:
+print(10 // 3)
+
+Çıktı:
+3
+
+Mod Alma (%)
+
+Bir sayının başka bir sayıya bölümünden kalanı verir.
+
+Örnek:
+print(10 % 3)
+
+Çıktı:
+1
+
+Çift sayı kontrolü örneği:
+print(4 % 2)
+
+Sonuç 0 ise sayı çifttir.
+
+Üs Alma (**)
+
+Bir sayının üssünü almak için ** operatörü kullanılır.
+
+Örnek:
+print(2 ** 3)
+
+Çıktı:
+8
+
+ARİTMETİK OPERATÖRLERİN ÖZETİ
+
+Toplama
+
+Çıkarma
+
+Çarpma
+/ Bölme
+// Tam bölme
+% Mod (kalan)
+** Üs alma

@@ -1,0 +1,76 @@
+🧠 Python ile Matematik Fonksiyonlarına Giriş
+✅ 1. Temel Matematiksel Operatörler
+
+Python’da matematik işlemleri normal matematik sembollerine benzer:
+
+a = 10
+b = 3
+
+print(a + b)   # toplama → 13
+print(a - b)   # çıkarma → 7
+print(a * b)   # çarpma → 30
+print(a / b)   # bölme → 3.333...
+print(a % b)   # mod (kalan) → 1
+print(a ** b)  # üs alma → 1000
+print(a // b)  # tam bölme → 3
+
+📌 Önemli:
+/ sonucu her zaman ondalık verir.
+// ise tam kısmı verir.
+
+✅ 2. Yerleşik Matematik Fonksiyonları
+
+Python’da bazı matematik işlemleri hazır fonksiyonlarla yapılır:
+
+print(abs(-5))     # mutlak değer → 5
+print(round(3.6))  # yuvarlama → 4
+print(min(2,5,1))  # en küçük → 1
+print(max(2,5,1))  # en büyük → 5
+print(pow(2,3))    # üs alma → 8
+✅ 3. math Modülü Kullanımı
+
+Daha gelişmiş matematik işlemleri için math modülü kullanılır.
+
+Önce modülü eklemelisin:
+
+import math
+📌 Sık Kullanılan Fonksiyonlar
+import math
+
+print(math.sqrt(16))     # karekök → 4.0
+print(math.factorial(5)) # faktöriyel → 120
+print(math.ceil(3.2))    # yukarı yuvarla → 4
+print(math.floor(3.8))   # aşağı yuvarla → 3
+print(math.pi)           # pi sayısı
+✅ 4. Trigonometrik Fonksiyonlar
+import math
+
+print(math.sin(math.radians(90)))  # sin90 → 1
+print(math.cos(math.radians(0)))   # cos0 → 1
+print(math.tan(math.radians(45)))  # tan45 → 1
+
+📌 Python trigonometrik işlemlerde derece değil radyan kullanır.
+
+✅ 5. Logaritma ve Üstel Fonksiyonlar
+import math
+
+print(math.log(10))     # doğal log
+print(math.log10(100))  # 10 tabanında log → 2
+print(math.exp(2))      # e^2
+🎯 Küçük Örnek Program
+
+Kullanıcıdan sayı alıp karekökünü bulan program:
+
+import math
+
+sayi = float(input("Bir sayı gir: "))
+sonuc = math.sqrt(sayi)
+
+print("Karekök:", sonuc)
+⭐ Özet
+
+Python’da matematik işlemleri:
+
+Operatörlerle yapılabilir
+Hazır fonksiyonlarla yapılabilir
+math modülü ile bilimsel hesaplamalar yapılabilir
