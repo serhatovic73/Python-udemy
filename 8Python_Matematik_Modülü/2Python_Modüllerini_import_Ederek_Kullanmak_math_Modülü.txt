@@ -1,0 +1,67 @@
+📦 Python’da Modül Nedir?
+
+Modül = Hazır kod kütüphanesi
+
+👉 Python’da bazı matematik işlemleri hazır gelir.
+Bunları kullanmak için modülü import etmen gerekir.
+
+🧮 math Modülü Nedir?
+
+👉 Matematiksel işlemler yapmaya yarar.
+
+Örnek:
+
+karekök
+üs alma
+pi sayısı
+trigonometrik işlemler
+✅ math modülünü import etmek
+🔹 1️⃣ Tüm modülü import etmek
+import math
+
+Kullanım:
+
+import math
+
+print(math.sqrt(25))   # karekök
+print(math.pow(2,3))   # üs alma
+print(math.pi)         # pi sayısı
+
+👉 Çıktı:
+
+5.0
+8.0
+3.1415926535
+🔹 2️⃣ Sadece istediğin fonksiyonu import etmek
+from math import sqrt
+
+Kullanım:
+
+from math import sqrt
+
+print(sqrt(36))
+
+👉 Artık math yazmana gerek yok.
+
+🔹 3️⃣ Hepsini import etmek (çok önerilmez)
+from math import *
+print(sqrt(49))
+print(pi)
+
+👉 Ama bu yöntem karışıklık yapabilir.
+
+✅ Sık kullanılan math fonksiyonları
+Fonksiyon	Anlamı
+math.sqrt(x)	karekök
+math.pow(x,y)	x^y
+math.ceil(x)	yukarı yuvarlama
+math.floor(x)	aşağı yuvarlama
+math.pi	pi sayısı
+math.sin(x)	sinüs
+🎯 Küçük örnek program
+import math
+
+sayi = float(input("Sayı gir: "))
+
+print("Karekök:", math.sqrt(sayi))
+print("Alan (pi*r^2):", math.pi * sayi * sayi)
